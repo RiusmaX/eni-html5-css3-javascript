@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body {
+  font-family: 'Montserrat', 'Segoe UI', 'Arial', sans-serif;
+}
+
+/* Définir une couleur sur une balise HTML */
+h1 {
+  color: red;
+}
+
+/* Définir une couleur en fonction du frère de mon élément */
+h1 + a {
+  color: green
+}
+
+/* Sélecteur de classe */
+.section-intro {
+  background-color: aquamarine;
+}
+
+/* Sélecteur descendant */
+.section-intro p {
+  color: darkblue;
+  column-count: 3;
+  column-gap: 2em;
+  column-rule: 1px dotted darkgray;
+}
+
+.section-intro p strong {
+  color: pink;
+}
+
+.section-container {
+  margin: 150px 50px;
+}
+
+.section-container p {
+  border: 2px solid darkcyan;
+  padding-inline: 50px;
+  padding-block: 100px;
+  text-align: center;
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
