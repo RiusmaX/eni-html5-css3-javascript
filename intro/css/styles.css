@@ -46,3 +46,43 @@ h1 + a {
 ul, ol {
   list-style: none;
 }
+
+button#mon-bouton {
+  padding: 1.5em;
+  background: radial-gradient(circle at 40px 40px, pink 40%, violet 50%);
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 3px #666666;
+}
+
+button#mon-bouton:hover {
+  background: radial-gradient(circle at 40px 40px, violet 40%, pink 50%);;
+  color: darkslategray;
+  cursor: pointer;
+  box-shadow: 0 8px 10px #666666;
+}
+
+button#mon-bouton:active::after {
+  content: '👌';
+}
+
+button#mon-bouton:active {
+  background-color: darkcyan;
+  color: white;
+  font-size: 18px;
+}
+
+a[aria-label*='es'] {
+  font-size: 40px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table td, table th {
+  border-bottom: 1px solid red;
+  padding: 5px;
+}

@@ -22,12 +22,12 @@ nav a {
   color: black;
 }
 
-header {
+header#main-header {
   position: fixed;
   z-index: 10;
   width: 100%;
   height: 50px;
-  background-color: red;
+  background-color: turquoise;
 }
 
 header, header nav, header nav ul, header h1, header nav ul li {
@@ -38,4 +38,43 @@ header, header nav, header nav ul, header h1, header nav ul li {
   position: relative;
   margin-top: 50px;
   height: 100%;
+}
+
+video#video-background {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.header-video {
+  width: 100%;
+  position: relative;
+}
+
+.overlay {
+  top: 0; 
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay h1 {
+  position: relative;
+  /* height: 100%; */
+  width: 100%;
+  color: white;
+  text-align: center;
+  top: 40%;
+}
+
+.overlay button {
+  position: relative;
+  top: 40%;
+  text-align: center;
+  left: 35%;
 }
