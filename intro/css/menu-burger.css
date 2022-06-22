@@ -1,0 +1,78 @@
+input#menuBurger {
+  display: none;
+}
+
+.contenu {
+  transition: margin 0.5s ease
+}
+
+.contenu p {
+  padding: 10px;
+}
+
+nav#navMenu {
+  height: 0;
+  opacity: 0;
+}
+
+nav#navMenu ul {
+  list-style: none;
+}
+
+nav#navMenu ul li a {
+  text-transform: uppercase;
+  background: hsl(102, 100%, 39%);
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+label[for='menuBurger'] {
+  margin: 1rem;
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+input#menuBurger:checked ~ .contenu {
+  margin-top: 18rem;
+}
+
+input#menuBurger:checked ~ nav#navMenu {
+  transition: opacity 1s;
+  opacity: 1;
+}
+
+@media screen and (min-width:37.5rem) {
+  body {
+    overflow-x: hidden;
+  }
+  input#menuBurger:checked ~ .contenu {
+    margin: 0 0 0 9rem;
+  }
+  nav#navMenu ul {
+    width: 9rem;
+  }
+}
+
+@media screen and (min-width: 62.75rem) {
+  label[for='menuBurger'] {
+    display: none;
+  }
+  nav#navMenu {
+    height: auto;
+    opacity: 1;
+  }
+  nav#navMenu ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: auto;
+    margin: 1rem auto;
+  }
+}
+
+
