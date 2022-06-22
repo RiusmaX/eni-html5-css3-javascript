@@ -1,0 +1,178 @@
+/* START IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* END IMPORTS */
+/* START VARIABLES */
+
+:root {
+  --primary-color: #00CCBC;
+  --background-color: #303030;
+  --text-color: #fff;
+  --text-color-alternative: #303030;
+  --header-height: 10vh;
+  --footer-height: 5vh;
+  --padding-default: 5px;
+  --main-height: calc(100vh - (var(--header-height) + var(--footer-height) + (var(--padding-default) * 4)));
+}
+
+/* END VARIABLES */
+/* START GLOBALS */
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vm;
+  font-family: 'Montserrat', 'Segoe UI', 'Arial', sans-serif;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2vw;
+}
+
+h2 {
+  font-size: 1.5vw;
+}
+
+/* END GLOBALS */
+/* START LAYOUT */
+
+#conteneur {
+  margin: 0 auto;
+  padding: 0;
+}
+
+main {
+  height: var(--main-height);
+  flex-grow: 1;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+/* END LAYOUT */
+/* START HEADER */
+
+header {
+  /* position: fixed; */
+  height: var(--header-height);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 8vw;
+}
+
+#header-left {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 2em;
+}
+
+header, footer {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+nav {
+  justify-content: space-around;
+  max-width: 50vw;
+  height: var(--header-height);
+}
+
+nav, main {
+  display: flex;
+  flex-grow: 1;
+}
+
+nav a {
+  flex: 1;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+  color: var(--text-color);
+  font-weight: bolder;
+  height: var(--header-height);
+  font-size: 1.1vw;
+  line-height: var(--header-height);
+}
+
+nav a:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+/* END HEADER */
+
+footer {
+  height: var(--footer-height);
+}
+
+footer p {
+  text-align: center;
+}
+
+header, nav, section, #gauche, #droite, footer {
+  padding: var(--padding-default);
+}
+
+/* VIDEO HEADER */
+
+#video-container {
+  position: relative;
+  width: 100vw;
+  height: var(--main-height);
+  flex: 1;
+}
+
+video#video-background {
+  object-fit: cover;
+  width: 100vw;
+  height: var(--main-height);
+  vertical-align: middle;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.8);
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay h1 {
+  align-self: center;
+  color: white;
+  text-align: center;
+}
+
+.overlay button {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 20px;
+  margin-top: 2em;
+  text-align: center;
+  color: var(--background-color);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.overlay button:hover {
+  background-color: var(--background-color);
+  cursor: pointer;
+  color: var(--text-color);
+  border: none;
+  padding: 20px;
+  margin-top: 2em;
+  text-align: center;
+}
