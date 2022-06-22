@@ -1,0 +1,45 @@
+.container {
+  padding: 50px;
+  margin: 50px;
+  border: 1px solid black;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.rotate {
+  transform: rotate(-20deg);
+}
+
+.skew {
+  transform: skew(30deg, 10deg);
+}
+
+.translate {
+  transform: translate(50px, 100px);
+}
+
+.scale {
+  transform: scale(2);
+}
+
+.rotate-transition {
+  transform: rotate(-20deg);
+  transition: transform 2s;
+}
+
+.rotate-transition:hover {
+  transform: rotate(0deg);
+}
+
+.background-transition {
+  background-color: deeppink;
+  background-image: linear-gradient( white, rgba(255,255,255,0));
+  transition: background-color 1s, transform 2s;
+  transition-delay: 1s;
+}
+
+.background-transition:hover {
+  background-color: steelblue;
+}

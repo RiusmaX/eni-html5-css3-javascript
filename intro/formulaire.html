@@ -40,6 +40,57 @@
         <option value='lemans'>Le Mans</option>
         <option value='vallet'>Vallet</option>
       </select>
+      <br />
+      <label>
+        Cours :
+        <input id='courses' type='text' list='lesCours' />
+        <datalist id='lesCours'>
+          <option value='HTML5' />
+          <option value='CSS3' />
+          <option value='JavaScript' />
+        </datalist>
+      </label>
+      <fieldset>
+        <legend>Règlement</legend>
+        <label>
+          <input type='radio' id='reglement-cheque' name='reglement' value='cheque' />
+          Chèque
+        </label>
+        <label>
+          <input type='radio' id='reglement-CB' name='reglement' value='cb' checked />
+          CB
+        </label>
+        <label>
+          <input type='radio' id='reglement-virement' name='reglement' value='virement' />
+          Virement
+        </label>
+      </fieldset>
+      <br />
+      <label>
+        <input type='checkbox' name='infos' value='infos' />
+        Voulez-vous recevoir nos actualités ?
+      </label>
+      <br />
+      <label>
+        Indiquez votre âge :
+        <input type='number' name='age' min='18' max='90' step='1' value='25' />
+      </label>
+      <br />
+      <label>
+        Indiquez votre âge :
+        <input type='range' name='age' min='18' max='90' step='1' value='25' />
+      </label>
+      <br />
+      <label>
+        Indiquez votre date de naissance :
+        <input type='date' name='birthdate' />
+      </label>
+      <br />
+      <label>
+        Indiquez votre heure de naissance :
+        <input type='time' name='birthtime' />
+      </label>
+      <br />
       <button type="submit">Envoyer</button>
     </form>
   </main>
