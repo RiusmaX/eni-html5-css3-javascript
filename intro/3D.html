@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' type='text/css' href='./css/3D.css'>
+  <title>Document</title>
+  <script type='text/javascript'>
+    var face = true
+    function rotation3D() {
+      var zone = document.getElementById('zone')
+      if (face) {
+        zone.className = 'rotation'
+      } else {
+        zone.className = ''
+      }
+      face = !face
+    }
+  </script>
+</head>
+<body>
+  <main>
+    <input type='button' onclick='rotation3D();' value='rotate 3D'/>
+    <div id='zone' onclick='rotation3D();'>
+      <div class='face'>De face</div>
+      <div class='back face'>De dos</div>
+    </div>
+  </main>
+</body>
+</html>

@@ -86,3 +86,10 @@ table td, table th {
   border-bottom: 1px solid red;
   padding: 5px;
 }
+
+@media screen and (max-width: 720px) {
+  .section-intro p {
+    column-count: 2;
+    column-gap: 1em;
+   }
+}

@@ -1,1 +1,25 @@
 /* Définition de l'animation */
+@keyframes titleAnimation {
+  0% {
+    /* margin-left: 0px; */
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    /* margin-left: 200px; */
+    transform: scale(2) rotate(360deg);
+  }
+}
+
+@keyframes blinkAnimation {
+  0% { color: coral}
+  50% { color: cornflowerblue }
+  100% { color: crimson }
+}
+
+h1 {
+  margin-top: 250px;
+  animation-name: titleAnimation, blinkAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
