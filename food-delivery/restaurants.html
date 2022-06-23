@@ -4,20 +4,36 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link type='text/css' rel='stylesheet' href='css/styles.css' />
+  <link type='text/css' rel='stylesheet' href='css/index.css' />
+  <link type='text/css' rel='stylesheet' href='css/restaurants.css' />
+  <script type='text/javascript' src='./js/restaurants-functions.js'></script>
+  <script type='text/javascript' src='./js/RestaurantList.js'></script>
   <title>Restaurants</title>
 </head>
 <body>
-  <header>
-    <h1>Food Delivery</h1>
-    <nav>
-      <ul>
-        <li><a href='index.html'>Accueil</a></li>
-        <li><a href='restaurants.html'>Restaurants</a></li>
-        <li><a href='a-propos.html'>A propos</a></li>
-      </ul>
-    </nav>
-  </header>
-  <h1>RESTAURANTS</h1>
+  <div id='conteneur'>
+    <header>
+      <img src='./img/logo-deliveroo.png' />
+      <div id='header-left'>
+        <h1>Food Delivery</h1>
+        <h2>Votre repas quand vous voulez, où vous voulez</h2>
+      </div>
+      <nav>
+        <a href='#'>Accueil</a>
+        <a href='./restaurants.html'>Restaurants</a>
+        <a href='#'>A propos</a>
+        <a href='#'>Mon Compte</a>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <p>Chargement...</p>
+        <restaurants-list></restaurants-list>
+      </div>
+    </main>
+    <footer>
+      <p>Ceci est un footer ✌️</p>
+    </footer>
+  </div>
 </body>
 </html>

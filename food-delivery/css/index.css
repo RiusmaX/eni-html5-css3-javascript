@@ -48,7 +48,7 @@ h2 {
 }
 
 main {
-  height: var(--main-height);
+  /* height: var(--main-height); */
   flex-grow: 1;
   justify-content: space-between;
   margin: 0;
