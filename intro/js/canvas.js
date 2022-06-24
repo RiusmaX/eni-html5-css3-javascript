@@ -35,7 +35,6 @@
     currentBg = ctx.fillStyle
   })
   document.getElementById('controlSize').addEventListener('change', function () {
-    console.log(this)
     currentSize = this.value
     document.getElementById('showSize').innerHTML = this.value
   })
