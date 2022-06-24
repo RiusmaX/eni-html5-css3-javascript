@@ -14,3 +14,26 @@ div#sidebar {
   padding: 20px 20px;
   top:0;
 }
+
+canvas#canvas {
+  left: 150px;
+  top: 45px;
+}
+
+.btn, input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.toolsButtons .btn {
+  width: 48%;
+}
+
+.colorpicker {
+  background: transparent;
+  height: 40px;
+}
