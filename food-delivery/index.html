@@ -5,35 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' type='text/css' href='./css/index.css'>
+  <link rel="shortcut icon" href="https://cwa.roocdn.com/_next/static/favicon-32x32.9ac59871.png" type="image/png" sizes="32x32">
+  <script src='./js/Header.js'></script>
+  <script src='./js/Footer.js'></script>
   <title>Document</title>
 </head>
 <body>
   <div id='conteneur'>
-    <header>
-      <img src='./img/logo-deliveroo.png' />
-      <div id='header-left'>
-        <h1>Food Delivery</h1>
-        <h2>Votre repas quand vous voulez, où vous voulez</h2>
-      </div>
-      <nav>
-        <a href='#'>Accueil</a>
-        <a href='./restaurants.html'>Restaurants</a>
-        <a href='#'>A propos</a>
-        <a href='#'>Mon Compte</a>
-      </nav>
-    </header>
+    <site-header></site-header>
     <main>
       <div id='video-container'>
         <video autoplay muted loop id='video-background' src='./video/header-home-bg.mp4'></video>
         <div class='overlay'>
           <h1>Votre repas où vous voulez, quand vous voulez</h1>
-          <button>Commandez maintenant !</button>
+          <a href='./restaurants.html'>Commandez maintenant !</a>
         </div>
       </div>
     </main>
-    <footer>
-      <p>Ceci est un footer ✌️</p>
-    </footer>
+    <site-footer></site-footer>
   </div>
 </body>
 </html>

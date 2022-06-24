@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,27 @@
   <link rel="shortcut icon" href="https://cwa.roocdn.com/_next/static/favicon-32x32.9ac59871.png" type="image/png" sizes="32x32">
   <link type='text/css' rel='stylesheet' href='css/index.css' />
   <link type='text/css' rel='stylesheet' href='css/restaurants.css' />
+  <link type='text/css' rel='stylesheet' href='css/restaurant.css' />
   <script src='./js/Header.js'></script>
   <script src='./js/Footer.js'></script>
-  <script type='text/javascript' src='./js/restaurants-functions.js'></script>
-  <script type='text/javascript' src='./js/RestaurantList.js'></script>
-  <title>Restaurants</title>
+  <script src='./js/restaurants-functions.js'></script>
+  <script src='./js/Restaurant.js'></script>
+  <script src='./js/RestaurantHeader.js'></script>
+  <script src='./js/RestaurantPlatList.js'></script>
+  <title>Document</title>
 </head>
+
 <body>
   <div id='conteneur'>
     <site-header></site-header>
     <main>
       <div>
-        <restaurants-list></restaurants-list>
+        <restaurant-main id='restaurant'>
+        </restaurant-main>
       </div>
     </main>
     <site-footer></site-footer>
   </div>
 </body>
+
 </html>

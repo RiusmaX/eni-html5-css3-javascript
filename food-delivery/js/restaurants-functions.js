@@ -14,3 +14,14 @@ async function fetchRestaurants () {
     console.error(error)
   }
 }
+
+async function fetchRestaurantById (id) {
+  try {
+    const response = await window.fetch(`${API_URL}/restaurants/${id}`)
+    const restaurants = await response.json()
+    return restaurants
+  } catch (error) {
+    console.error(error)
+  }
+}
+

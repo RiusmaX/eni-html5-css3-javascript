@@ -13,6 +13,7 @@ class RestaurantsList extends HTMLElement {
 
   renderRestaurant (restaurant) {
     return `
+    <a href='./restaurant.html?id=${restaurant._id}'>
       <div class='card'>
         <img src="${API_URL}${restaurant.photos[0].url}">
         <div class='card-footer'>
@@ -20,6 +21,7 @@ class RestaurantsList extends HTMLElement {
           <p>${restaurant.description.substring(0, 150)}...</p>
         </div>
       </div>
+    </a>
     `
   }
 

@@ -87,7 +87,7 @@ nav {
   height: var(--header-height);
 }
 
-nav, main {
+nav {
   display: flex;
   flex-grow: 1;
 }
@@ -155,7 +155,12 @@ video#video-background {
   text-align: center;
 }
 
-.overlay button {
+.overlay a {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  color: initial;
   background-color: var(--primary-color);
   border: none;
   padding: 20px;
@@ -166,7 +171,7 @@ video#video-background {
   font-size: 18px;
 }
 
-.overlay button:hover {
+.overlay a:hover {
   background-color: var(--background-color);
   cursor: pointer;
   color: var(--text-color);
