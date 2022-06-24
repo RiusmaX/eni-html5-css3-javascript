@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    const options = {
+      enableHighAccuracy: true,
+      timeout: 5000,
+      maximumAge: 0
+    }
+    
+    function geolocationSuccess (pos) {
+      console.log(pos)
+    }
+
+    function geolocationError (error) {
+      console.error(error)
+    }
+    
+    function init () {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(geolocationSuccess, geolocationError, options)
+      }
+    }
+  </script>
+</head>
+<body onload="init();">
+  <h1>GEOLOCALISATION TEST</h1>
+</body>
+</html>
