@@ -21,31 +21,32 @@
    * Button Event Handlers
    */
   
-  document.getElementById('canvasUpdate').addEventListener('click', () => {
+  document.getElementById('canvasUpdate').addEventListener('click', function () {
     createCanvas()
     redraw()
   })
-  document.getElementById('colorpicker').addEventListener('change', () => {
+  document.getElementById('colorpicker').addEventListener('change', function () {
     currentColor= this.value
   })
-  document.getElementById('bgcolorpicker').addEventListener('change', () => {
+  document.getElementById('bgcolorpicker').addEventListener('change', function () {
     ctx.fillStyle = this.value
     ctx.fillRect(0, 0, canvas.width, canvas.heigth)
     redraw()
     currentBg = ctx.fillStyle
   })
-  document.getElementById('controlSize').addEventListener('change', () => {
+  document.getElementById('controlSize').addEventListener('change', function () {
+    console.log(this)
     currentSize = this.value
     document.getElementById('showSize').innerHTML = this.value
   })
-  document.getElementById('saveToImage').addEventListener('click', () => {
+  document.getElementById('saveToImage').addEventListener('click', function () {
     downloadCanvas(this, 'canvas', 'masterpiece.png')
   }, false)
   document.getElementById('eraser').addEventListener('click', eraser)
   document.getElementById('clear').addEventListener('click', createCanvas)
   document.getElementById('save').addEventListener('click', save)
   document.getElementById('load').addEventListener('click', load)
-  document.getElementById('clearCache').addEventListener('click', () => {
+  document.getElementById('clearCache').addEventListener('click', function () {
     localStorage.removeItem('savedCanvas')
     linesArray = []
     console.log('Cache cleared!')
